@@ -2,8 +2,17 @@ package com.managing_advertisements.first_project.service;
 
 import java.util.List;
 
-import com.managing_advertisements.first_project.model.advertistingAcordingTime;
+import com.managing_advertisements.first_project.dto.advertistingAcordingTimeDTO;
+
+
+
 
 public interface advertistingAcordingTimeService {
-public List <advertistingAcordingTime> getAdvert();
+    
+public List <advertistingAcordingTimeDTO> getAdvert();
+
+public void save(advertistingAcordingTimeDTO advert);
+
+public void add(advertistingAcordingTimeDTO advert);
+
 } 

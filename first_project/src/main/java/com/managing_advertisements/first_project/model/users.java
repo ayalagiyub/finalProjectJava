@@ -14,4 +14,6 @@ public class users{
     int password;
     @Column
     String name;
+    @Column
+    String email;
 }
