@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.managing_advertisements.first_project.dto.advertistingAcordingTimeDTO;
 import com.managing_advertisements.first_project.dto.advertistingAcordingViewingDTO;
 import com.managing_advertisements.first_project.dto.advertistingDTO;
-import com.managing_advertisements.first_project.model.advertisting;
+import com.managing_advertisements.first_project.model.advertising;
 import com.managing_advertisements.first_project.model.advertistingAcordingTime;
 import com.managing_advertisements.first_project.model.advertistingAcordingViewing;
 import com.managing_advertisements.first_project.service.advertistingAcordingTimeService;

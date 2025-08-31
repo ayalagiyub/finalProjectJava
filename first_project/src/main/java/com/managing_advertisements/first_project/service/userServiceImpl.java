@@ -26,7 +26,7 @@ public class userServiceImpl implements userService {
         if (isExist(user)) {
             throw new IllegalStateException("this user already exist");
         }
-        if (UsersRep.existsById(user.getPassword())) {
+        if (UsersRep.existsByPassword(user.getPassword())) {
             throw new IllegalStateException("mmm this password somone already choosed");
         } else {
             UsersRep.save(mapper.map(user,users.class));
@@ -41,7 +41,7 @@ public class userServiceImpl implements userService {
 
     @Override
     public boolean isExist(usersDTO user) {
-        if (isExist(user)) {
+        if (UsersRep.existsById(user.getUserId())) {
             return true;
         }
         return false;

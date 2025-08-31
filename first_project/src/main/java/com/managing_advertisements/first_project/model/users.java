@@ -11,7 +11,9 @@ import lombok.Data;
 @Data
 public class users{
     @Id
-    int password;
+    int userId;
+    @Column
+    String password;
     @Column
     String name;
     @Column
